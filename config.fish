@@ -6,14 +6,13 @@ fish_vi_key_bindings
 
 if which direnv > /dev/null 2>&1
 	eval (direnv hook fish)
-	echo "Setting direnv hook"  
+	echo "Setting direnv hook"
 else
 	echo "direnv not installed"
 end
 
 if which thefuck > /dev/null 2>&1
 	thefuck --alias | source
-	echo "Setting thefuck alias"
 else
 	echo "thefuck not installed"
 end
