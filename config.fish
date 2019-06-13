@@ -19,7 +19,7 @@ end
 
 if status --is-interactive
 	abbr --add --global g git
-	abbr --add --global da 'direnv add'
+	abbr --add --global da 'direnv allow'
 	abbr --add --global qr 'cat | qrencode -tANSIUTF8 -o-'
 end
 
