@@ -4,7 +4,19 @@ set -x N_PREFIX $HOME/.local
 
 fish_vi_key_bindings
 
-eval (direnv hook fish)
+if which direnv > /dev/null 2>&1
+	eval (direnv hook fish)
+	echo "Setting direnv hook"  
+else
+	echo "direnv not installed"
+end
+
+if which thefuck > /dev/null 2>&1
+	thefuck --alias | source
+	echo "Setting thefuck alias"
+else
+	echo "thefuck not installed"
+end
 
 if status --is-interactive
 	abbr --add --global g git
@@ -12,4 +24,3 @@ if status --is-interactive
 	abbr --add --global qr 'cat | qrencode -tANSIUTF8 -o-'
 end
 
-thefuck --alias | source
