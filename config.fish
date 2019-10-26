@@ -22,6 +22,6 @@ if status --is-interactive
 	abbr --add --global g git
 	abbr --add --global da 'direnv allow'
 	abbr --add --global qr 'cat | qrencode -tANSIUTF8 -o-'
-  abbr --add --global cljr 'env DATOMIC_ENDPOINT=localhost clj -A"dev" -e "(dev)(go)" -r'
+  abbr --add --global cljr 'env DATOMIC_ENDPOINT=localhost:8998 clj -A"dev" -e "(dev)(go)" -r'
 end
 
