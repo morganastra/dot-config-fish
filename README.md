@@ -16,5 +16,5 @@ For more info about the AUR see: https://wiki.archlinux.org/index.php/Arch_User_
 
 * [`aurc`](functions/aurc.fish): Install a package from the AUR.
 * [`aurs`](functions/aurs.fish): Search the AUR for a given string.
-* [`aur-sync`](function/aur-sync.fish): Downloads the latest AUR package list. Not currently used for anything 😅
-* [`aur-disappeared`](funcion/aur-disappeared.fish): Display a list of locally installed packages that have been removed from the AUR.
+* [`aur-sync`](functions/aur-sync.fish): Downloads the latest AUR package list. Not currently used for anything 😅
+* [`aur-disappeared`](funcions/aur-disappeared.fish): Display a list of locally installed packages that have been removed from the AUR.
