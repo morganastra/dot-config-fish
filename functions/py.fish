@@ -1,3 +1,3 @@
-function ipy
+function py
 	ipython2 $argv;
 end
