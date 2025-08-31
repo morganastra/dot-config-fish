@@ -1,5 +1,6 @@
-# Defined in /tmp/fish.I1pCm3/blanking-pause.fish @ line 2
 function blanking-pause
+  xset -dpms
+  xset s off
   if count $argv > /dev/null
     sleep $argv[1] &
     set sleep_pid (jobs -lp | tail -n1) 
