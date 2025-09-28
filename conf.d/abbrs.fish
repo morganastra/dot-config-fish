@@ -11,3 +11,4 @@ abbr -a -- py ipython
 abbr -a -- spm 'sudo pacman'
 abbr -a --position anywhere --command git -- s status
 abbr -a --position anywhere --command git -- cm 'commit -m'
+abbr -a -- l ls
