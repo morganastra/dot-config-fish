@@ -40,7 +40,7 @@ Meant to be used with a music library organized with directories for each album,
 * [`m`](functions/m.fish): Play album or directory
 * [`mshuf`](functions/mshuf.fish): Play album or directory in shuffled order
 * [`findmusic`](functions/findmusic.fish): Utility function to list music files in a directory (recursively)
-* `mr` (abbr for `m (rdir)`): Play a random album 
+* `mrand` (abbr for `m (randir)`): Play a random album 
 
 ### Color/theme functions
 
@@ -52,5 +52,5 @@ Meant to be used with a music library organized with directories for each album,
 * [`a`](functions/a.fish): Use the best grep-replacement installed.
 * [`abbr-save`](functions/abbr-save.fish): Interactively save contents of `abbr`. Assumes you want your abbrs in `conf.d/abbrs.fish`
 * [`pwait`](functions/pwait.fish): Sleep until another process exits.
-* [`rdir`](functions/rdir.fish): Select a random subdirectory.
+* [`randir`](functions/randir.fish): Select a random subdirectory.
 * [`read-confirm`](functions/read-confirm.fish): Prompt user to confirm something.
