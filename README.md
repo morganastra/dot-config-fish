@@ -12,6 +12,7 @@ To install, symlink to ~/.config/fish
 * ripgrep (rg) 
 * mpv
 * qrencode
+* fzf
 
 ## Interesting functions 
 
