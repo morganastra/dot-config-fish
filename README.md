@@ -5,16 +5,17 @@ My personal config for the Friendly Interactive Shell.
 
 To install, symlink to ~/.config/fish
 
-## External commands required
+## External commands required for full functionality
 
 * cowsay
 * bat
-* ripgrep (rg) 
+* ripgrep (rg)
 * mpv
 * qrencode
 * fzf
+* python3
 
-## Interesting functions 
+## Interesting functions
 
 ### AUR package management
 
@@ -40,7 +41,7 @@ Meant to be used with a music library organized with directories for each album,
 * [`m`](functions/m.fish): Play album or directory
 * [`mshuf`](functions/mshuf.fish): Play album or directory in shuffled order
 * [`findmusic`](functions/findmusic.fish): Utility function to list music files in a directory (recursively)
-* `mrand` (abbr for `m (randir)`): Play a random album 
+* `mrand` (abbr for `m (randir)`): Play a random album
 
 ### Color/theme functions
 
