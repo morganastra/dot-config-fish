@@ -14,6 +14,8 @@ To install, symlink to ~/.config/fish
 * qrencode
 * fzf
 * python3
+* jq
+* curl
 
 ## Interesting functions
 
@@ -29,6 +31,10 @@ package git repos will be cloned. `.local/share/aur` is a reasonable choice.
 * [`aur-dir-clean`](functions/aur-dir-clean.fish): Remove orphaned AUR directories not corresponding to installed packages.
 * [`aur-sync`](functions/aur-sync.fish): Downloads the latest AUR package list. Not currently used for anything 😅
 * [`aur-disappeared`](functions/aur-disappeared.fish): Display a list of locally installed packages that have been removed from the AUR.
+
+### Weather
+
+* [`weather`](functions/weather.fish): Get the weather forecast using open-meteo API
 
 ### Word Games
 
