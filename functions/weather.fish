@@ -1,8 +1,14 @@
 function weather --description 'Show weather forecast for a city'
     set -l city "Oakland"
 
-    argparse 'd/debug' -- $argv
+    argparse 'd/debug' 'n/days=' -- $argv
     or return
+
+    if set -ql _flag_days
+        set forecast_days $_flag_days
+    else
+        set forecast_days 3
+    end
 
     if test -n "$argv"
         set city "$argv"
@@ -34,7 +40,7 @@ function weather --description 'Show weather forecast for a city'
         --data-urlencode "longitude=$lon" \
         --data-urlencode "daily=weathercode,temperature_2m_max,temperature_2m_min,precipitation_sum" \
         --data-urlencode "timezone=auto" \
-        --data-urlencode "forecast_days=3")
+        --data-urlencode "forecast_days=$forecast_days")
 
     if set -ql _flag_debug
         echo "=== Forecast Response ==="
@@ -42,10 +48,12 @@ function weather --description 'Show weather forecast for a city'
         echo ""
     end
 
-    echo "Weather for $city_name (next 3 days)"
-    echo "======================================"
+    set -l header "Weather for $city_name (next $forecast_days days)"
+    set -l separator (string repeat -n (string length $header) -- "=")
+    echo $header
+    echo $separator
 
-    for i in 0 1 2
+    for i in (seq 0 (math $forecast_days - 1))
         set -l date (echo $forecast | jq -r ".daily.time[$i]")
         set -l code (echo $forecast | jq -r ".daily.weathercode[$i]")
         set -l max_temp (echo $forecast | jq -r ".daily.temperature_2m_max[$i]")
