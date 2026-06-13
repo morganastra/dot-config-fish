@@ -12,6 +12,10 @@ function aurc
     git clone "https://aur.archlinux.org/"$argv[1]".git" $workdir
       or git pull
 
+    bat PKGBUILD
+
+    read-confirm
+
     makepkg -sri
 
     popd

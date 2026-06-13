@@ -19,6 +19,10 @@ function aurup
         
         # Pull latest changes
         git pull
+
+	bat PKGBUILD
+
+	read-confirm
         
         # Rebuild and install only if needed
         makepkg -sri --needed --noconfirm
