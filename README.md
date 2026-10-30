@@ -58,6 +58,7 @@ Meant to be used with a music library organized with directories for each album,
 
 * [`a`](functions/a.fish): Use the best grep-replacement installed.
 * [`abbr-save`](functions/abbr-save.fish): Interactively save contents of `abbr`. Assumes you want your abbrs in `conf.d/abbrs.fish`
+* [`cxdg`](functions/cxdg.fish): `cd` to an XDG user directory, e.g. `cxdg music` cd's to the configured MUSIC directory.
 * [`pwait`](functions/pwait.fish): Sleep until another process exits.
 * [`randir`](functions/randir.fish): Select a random subdirectory.
 * [`read-confirm`](functions/read-confirm.fish): Prompt user to confirm something.
