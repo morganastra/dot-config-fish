@@ -31,6 +31,7 @@ package git repos will be cloned. `.local/share/aur` is a reasonable choice.
 * [`aur-dir-clean`](functions/aur-dir-clean.fish): Remove orphaned AUR directories not corresponding to installed packages.
 * [`aur-sync`](functions/aur-sync.fish): Downloads the latest AUR package list. Not currently used for anything 😅
 * [`aur-disappeared`](functions/aur-disappeared.fish): Display a list of locally installed packages that have been removed from the AUR.
+* [`aurw`](functions/aurw.fish): Open AUR web interface page for a package in the browser.
 
 ### Weather
 
